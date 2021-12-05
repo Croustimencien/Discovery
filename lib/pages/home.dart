@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
           title: Text('Discovery'),
         ),
         body: Center(
-          child: OnPressed: ('Hello World'),
+          child: Text('Hello World'),
         ),
       ),
     );
