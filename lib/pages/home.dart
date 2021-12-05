@@ -10,7 +10,16 @@ class MyApp extends StatelessWidget {
           title: Text('Discovery'),
         ),
         body: Center(
-          child: Text('Hello World'),
+          child: Column(
+            children: [
+              Container(
+                color: Colors.blue,
+                height: 140,
+                decoration: BoxDecoration(image: DecorationImage(image: AssetImage())),
+              )
+            ],
+          )
+
         ),
       ),
     );
