@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 #Mon Dec 06 21:52:17 CET 2021
 base.0=C\:\\Users\\Brewen\\StudioProjects\\Discovery\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+=======
+#Mon Dec 06 21:50:57 GMT+01:00 2021
+base.0=C\:\\Users\\nzxtl\\AndroidStudioProjects\\flutterApp\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+>>>>>>> 9d93f16d399774f483886bbd5cc607d8d398fc68
 renamed.0=classes.dex
 path.0=classes.dex

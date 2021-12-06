@@ -108,7 +108,11 @@ packages:
       name: http
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "0.13.4"
+=======
+    version: "0.13.3"
+>>>>>>> 9d93f16d399774f483886bbd5cc607d8d398fc68
   http_parser:
     dependency: transitive
     description:
@@ -150,6 +154,7 @@ packages:
       name: path_provider
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "2.0.7"
   path_provider_android:
     dependency: transitive
@@ -165,6 +170,9 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.7"
+=======
+    version: "2.0.4"
+>>>>>>> 9d93f16d399774f483886bbd5cc607d8d398fc68
   path_provider_linux:
     dependency: transitive
     description:
@@ -193,6 +201,16 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.4"
+<<<<<<< HEAD
+=======
+  pedantic:
+    dependency: transitive
+    description:
+      name: pedantic
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.11.1"
+>>>>>>> 9d93f16d399774f483886bbd5cc607d8d398fc68
   platform:
     dependency: transitive
     description:
@@ -213,7 +231,11 @@ packages:
       name: process
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "4.2.4"
+=======
+    version: "4.2.3"
+>>>>>>> 9d93f16d399774f483886bbd5cc607d8d398fc68
   sky_engine:
     dependency: transitive
     description: flutter
@@ -281,7 +303,11 @@ packages:
       name: win32
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "2.3.1"
+=======
+    version: "2.0.5"
+>>>>>>> 9d93f16d399774f483886bbd5cc607d8d398fc68
   xdg_directories:
     dependency: transitive
     description:
@@ -290,5 +316,10 @@ packages:
     source: hosted
     version: "0.2.0"
 sdks:
+<<<<<<< HEAD
   dart: ">=2.14.0 <3.0.0"
   flutter: ">=2.5.0"
+=======
+  dart: ">=2.12.0 <3.0.0"
+  flutter: ">=2.0.0"
+>>>>>>> 9d93f16d399774f483886bbd5cc607d8d398fc68
