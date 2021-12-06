@@ -7,6 +7,7 @@ class MyApp extends StatelessWidget {
       title: 'Discovery',
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.red,
           title: Text('Discovery'),
         ),
         body: SingleChildScrollView(

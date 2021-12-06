@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import './pages/home.dart';
+import './pages/liste.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(liste());
 
