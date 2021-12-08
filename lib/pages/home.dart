@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './authen.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -26,7 +27,9 @@ class MyApp extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         TextButton(
-                          onPressed: () => {},
+                          onPressed: () => {
+                            MaterialPageRoute(builder: (context) => Authen()),
+                          },
                           child: Column(
                             children: [
                               Icon(Icons.login, size: 100, color: Colors.black,),
