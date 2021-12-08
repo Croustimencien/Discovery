@@ -7,42 +7,52 @@ class MyApp extends StatelessWidget {
       title: 'Discovery',
       home: Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.red,
           title: Text('Discovery'),
         ),
-        body: Center(
+        body: SingleChildScrollView(
           child: Column(
-            children: [
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
               new Image.asset(
                 'assets/LogoDiscovery.png',
-                width: 400.0,
-                height: 400.0,
+                width: 200.0,
+                height: 200.0,
                 fit: BoxFit.cover,
               ),
               Container(
                   child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         TextButton(
                           onPressed: () => {},
                           child: Column(
                             children: [
-                              Icon(Icons.login),
+                              Icon(Icons.login, size: 100, color: Colors.black,),
                               Text("Connexion")
                             ],
                           ),
                         ),
-                    TextButton(
-                    onPressed: () => {},
-                      child: Column(
-                        children: [
-                          Icon(Icons.logout),
-                          Text("Connexion")
-                        ],
-                      ),
-                    )
-                  ]
+
+                        TextButton(
+                        onPressed: () => {},
+                          child: Column(
+                            children: [
+                              Icon(Icons.logout, size: 100, color: Colors.black,),
+                              Text("Déconnexion",)
+                            ],
+                          ),
+                        )
+                      ]
                 )
-              )
+              ),
+            new Image.asset(
+              'assets/PortBrest.png',
+              width: 600.0,
+              height: 400.0,
+              fit: BoxFit.cover,
+            ),
           ]
         ),
       ),
