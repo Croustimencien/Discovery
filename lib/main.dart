@@ -1,6 +1,15 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import './pages/home.dart';
 import './pages/liste.dart';
 
-void main() => runApp(liste());
+<<<<<<< HEAD
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  Firebase.initializeApp();
+
+  runApp(MyApp());
+}
+
 

@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.appflutter">
    <application
-        android:label="appflutter"
-        android:icon="@mipmap/ic_launcher">
+        android:label="Discovery"
+        android:icon="@mipmap/_discovery">
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
