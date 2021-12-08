@@ -19,7 +19,7 @@ class liste extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text('une pepene'),
+                    Text('Port de Brest'),
                     new Image.asset(
                       'assets/PortBrest.png',
                       width: 200.0,
@@ -28,14 +28,15 @@ class liste extends StatelessWidget {
                     ),
                   ],
                 ),
+
               ),
               Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text('une pepene'),
+                    Text('Oceanopolis'),
                     new Image.asset(
-                      'assets/PortBrest.png',
+                      'assets/oceanopolis.png',
                       width: 200.0,
                       height: 100.0,
                       fit: BoxFit.cover,
@@ -48,9 +49,9 @@ class liste extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text('une pepene'),
+                    Text('Musée de la Marine'),
                     new Image.asset(
-                      'assets/PortBrest.png',
+                      'assets/museeMarine.png',
                       width: 200.0,
                       height: 100.0,
                       fit: BoxFit.cover,
@@ -63,9 +64,9 @@ class liste extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text('une pepene'),
+                    Text('Les Capucins'),
                     new Image.asset(
-                      'assets/PortBrest.png',
+                      'assets/capucins.png',
                       width: 200.0,
                       height: 100.0,
                       fit: BoxFit.cover,
@@ -77,9 +78,9 @@ class liste extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text('une pepene'),
+                    Text('La Tour Tanguy'),
                     new Image.asset(
-                      'assets/PortBrest.png',
+                      'assets/tourTangy.png',
                       width: 200.0,
                       height: 100.0,
                       fit: BoxFit.cover,
@@ -91,9 +92,9 @@ class liste extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text('une pepene'),
+                    Text('le telepherique'),
                     new Image.asset(
-                      'assets/PortBrest.png',
+                      'assets/telepherique.png',
                       width: 200.0,
                       height: 100.0,
                       fit: BoxFit.cover,
@@ -105,9 +106,9 @@ class liste extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Text('une pepene'),
+                    Text('Le pont de Recouvrance'),
                     new Image.asset(
-                      'assets/PortBrest.png',
+                      'assets/recouvrance.png',
                       width: 200.0,
                       height: 100.0,
                       fit: BoxFit.cover,
@@ -115,6 +116,35 @@ class liste extends StatelessWidget {
                   ],
                 ),
               ),
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Text('Le Master'),
+                    new Image.asset(
+                      'assets/bowling.png',
+                      width: 200.0,
+                      height: 100.0,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Text('Le jardin botanique'),
+                    new Image.asset(
+                      'assets/jardinBotanique.png',
+                      width: 200.0,
+                      height: 100.0,
+                      fit: BoxFit.cover,
+                    ),
+                  ],
+                ),
+              ),
+
             ],
           ),
         ),
