@@ -3,13 +3,12 @@ import 'package:flutter/material.dart';
 import './pages/home.dart';
 import './pages/liste.dart';
 
-<<<<<<< HEAD
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   Firebase.initializeApp();
 
-  runApp(MyApp());
+  runApp(liste());
 }
 
 

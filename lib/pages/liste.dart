@@ -28,8 +28,8 @@ class liste extends StatelessWidget {
                     ),
                   ],
                 ),
-
               ),
+              Spacer(),
               Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -44,7 +44,7 @@ class liste extends StatelessWidget {
                   ],
                 ),
               ),
-
+              Spacer(),
               Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -59,7 +59,7 @@ class liste extends StatelessWidget {
                   ],
                 ),
               ),
-
+              Spacer(),
               Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -74,6 +74,7 @@ class liste extends StatelessWidget {
                   ],
                 ),
               ),
+              Spacer(),
               Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -88,6 +89,7 @@ class liste extends StatelessWidget {
                   ],
                 ),
               ),
+              Spacer(),
               Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -102,6 +104,7 @@ class liste extends StatelessWidget {
                   ],
                 ),
               ),
+              Spacer(),
               Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -116,6 +119,7 @@ class liste extends StatelessWidget {
                   ],
                 ),
               ),
+              Spacer(),
               Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -130,6 +134,7 @@ class liste extends StatelessWidget {
                   ],
                 ),
               ),
+              Spacer(),
               Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -144,7 +149,6 @@ class liste extends StatelessWidget {
                   ],
                 ),
               ),
-
             ],
           ),
         ),
