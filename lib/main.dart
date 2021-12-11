@@ -1,3 +1,4 @@
+import 'package:appflutter/pages/authen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import './pages/home.dart';
@@ -8,5 +9,7 @@ void main() async {
 
   Firebase.initializeApp();
 
-  runApp(MyApp());
+  runApp(const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home:Authen()));
 }
