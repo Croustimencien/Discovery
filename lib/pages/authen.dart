@@ -1,15 +1,48 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_signin_button/button_view.dart';
-import './InscriptionMail.dart';
+import './inscriptionmail.dart';
+import './home.dart';
 
 class Authen extends StatelessWidget{
-  const Authen({Key? key}) : super(key: key);
+
+  final _formKey = GlobalKey<FormState>();
+  FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+  TextEditingController emailController = TextEditingController();
+  TextEditingController nameController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
 
   @override
 
   Widget build(BuildContext context) {
+    void logInToFb() {
+      firebaseAuth
+          .signInWithEmailAndPassword(
+          email: emailController.text, password: passwordController.text)
+          .then((result) {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (context) => Home()),
+        );
+      }).catchError((err) {
+        showDialog(
+            context: context,
+            builder: (BuildContext context) {
+              return AlertDialog(
+                title: const Text("Erreur..."),
+                content: Text(err.message),
+                actions: [
+                  TextButton(
+                    child: const Text("Bienvenue !"),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  )
+                ],
+              );
+            });
+      });
+    }
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -18,54 +51,31 @@ class Authen extends StatelessWidget{
           backgroundColor: Colors.orange,
           title: const Text('Authentication'),
         ),
-<<<<<<< HEAD
-        body: Center(
-          child: (
-        new Image.asset(
-            'assets/PortBrest.png',
-            width: 600.0,
-            height: 400.0,
-            fit: BoxFit.cover,)
-          )
-        )
-      ),
-    );
-  }
-=======
+
 
         body: Center(
 
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
-
-            children: [
-              Padding(
-                padding: EdgeInsets.all(10.0),
-                child: SignInButton(Buttons.Email,
-                  text: "Inscription via Email",
-                  onPressed: () {
+              children: [
+              ElevatedButton(onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => InscriMail()),
                     );
-                  },
-                )),
-            const Text('Veuillez vous connecter !', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),),
-            const TextField(
-              decoration: InputDecoration(
-              hintText: "Votre Email"
-              ),
+                  }, child: Text ("Inscription via Email"),
+                  ),
+            ElevatedButton(
+              style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.orange)),
+              onPressed: () {
+                if (_formKey.currentState!.validate()) {
+                  logInToFb();
+                }
+              },
+              child: Text('Se connecter'),
             ),
-            const TextField(
-            decoration: InputDecoration(
-            hintText: "Mot de passe"
-            )
-          ),
-        ]),
+            ]))));
 
-        )
-      ));
     }
->>>>>>> 60ce877b08c3d652a4261d145ed63de5fa25e0c3
 }

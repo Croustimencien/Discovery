@@ -1,8 +1,12 @@
+import 'package:appflutter/pages/InscriptionMail.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import './authen.dart';
 
 class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+   Home({Key? key}) : super(key: key);
+
+  var uid = FirebaseAuth.instance.currentUser;
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +17,22 @@ class Home extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.orange,
           title: const Text('Discovery'),
+          actions: <Widget>[
+            IconButton(
+                onPressed:(){
+                  FirebaseAuth auth = FirebaseAuth.instance;
+                  auth.signOut().then((res){
+                    Navigator.pushAndRemoveUntil(context,
+                        MaterialPageRoute(builder: (context) => InscriMail()),
+                        (Route<dynamic> route) => false);
+                  });
+                },
+                icon: const Icon(
+                  Icons.exit_to_app,
+                  color: Colors.white,
+                )
+            )
+          ],
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -32,7 +52,7 @@ class Home extends StatelessWidget {
                       onPressed: () => {Navigator.push(context,
                       MaterialPageRoute<void>(
                       builder:(BuildContext context) {
-                      return const Authen();
+                      return Authen();
                       }))},
                       child: Column(
                         children: const [
@@ -62,7 +82,8 @@ class Home extends StatelessWidget {
           ]
         ),
       ),
-    )
+      )
     );
   }
 }
+
