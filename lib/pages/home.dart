@@ -28,7 +28,10 @@ class MyApp extends StatelessWidget {
                       children: [
                         TextButton(
                           onPressed: () => {
-                            MaterialPageRoute(builder: (context) => Authen()),
+                          Navigator.push(context,MaterialPageRoute<void>(builder:(BuildContext context){
+                            return Authen();
+                            }
+                          )),
                           },
                           child: Column(
                             children: [

@@ -4,7 +4,7 @@ class Authen extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Discovery',
+      title: 'Authentification',
       home: Scaffold(
         appBar: AppBar(
           title: Text('Discovery'),
