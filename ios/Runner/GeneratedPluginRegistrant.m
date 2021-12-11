@@ -2,8 +2,6 @@
 //  Generated file. Do not edit.
 //
 
-// clang-format off
-
 #import "GeneratedPluginRegistrant.h"
 
 #if __has_include(<firebase_auth/FLTFirebaseAuthPlugin.h>)
@@ -18,6 +16,7 @@
 @import firebase_core;
 #endif
 
+<<<<<<< HEAD
 #if __has_include(<firebase_database/FLTFirebaseDatabasePlugin.h>)
 #import <firebase_database/FLTFirebaseDatabasePlugin.h>
 #else
@@ -26,8 +25,12 @@
 
 #if __has_include(<path_provider_ios/FLTPathProviderPlugin.h>)
 #import <path_provider_ios/FLTPathProviderPlugin.h>
+=======
+#if __has_include(<path_provider/FLTPathProviderPlugin.h>)
+#import <path_provider/FLTPathProviderPlugin.h>
+>>>>>>> 2a7ea75229be1776b1bd48a3f5e15efee2c96de4
 #else
-@import path_provider_ios;
+@import path_provider;
 #endif
 
 @implementation GeneratedPluginRegistrant

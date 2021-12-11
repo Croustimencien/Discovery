@@ -18,6 +18,20 @@ class Authen extends StatelessWidget{
           backgroundColor: Colors.orange,
           title: const Text('Authentication'),
         ),
+<<<<<<< HEAD
+        body: Center(
+          child: (
+        new Image.asset(
+            'assets/PortBrest.png',
+            width: 600.0,
+            height: 400.0,
+            fit: BoxFit.cover,)
+          )
+        )
+      ),
+    );
+  }
+=======
 
         body: Center(
 
@@ -53,4 +67,5 @@ class Authen extends StatelessWidget{
         )
       ));
     }
+>>>>>>> 60ce877b08c3d652a4261d145ed63de5fa25e0c3
 }

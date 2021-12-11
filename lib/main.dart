@@ -5,13 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 import './pages/home.dart';
 
-
-
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   Firebase.initializeApp();
-
   runApp(const MaterialApp(
       home:Authen()));
 
