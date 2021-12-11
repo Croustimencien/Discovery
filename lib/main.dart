@@ -1,25 +1,49 @@
-import 'package:appflutter/pages/authen.dart';
+import 'package:appflutter/pages/map.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import './pages/home.dart';
+import './pages/profil.dart';
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 60ce877b08c3d652a4261d145ed63de5fa25e0c3
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   Firebase.initializeApp();
-
-<<<<<<< HEAD
-  runApp(liste());
+  runApp(test());
 }
 
 
-=======
-  runApp(const MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home:Authen()));
+class test extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: 'Discovery',
+        home: Builder(
+          builder: (context) => Scaffold(
+            floatingActionButton: FloatingActionButton(onPressed: (){
+              Navigator.push(context, new MaterialPageRoute(
+                  builder: (context) => map()));
+            },),
+            appBar: AppBar(
+              title: Text('test'),
+            ),
+              body:  SingleChildScrollView(
+                  child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                            child: Row(
+                              children: [
+
+
+                              ]
+                            )
+                        )
+                      ]
+                  )
+              )
+          )
+        )
+    );
+  }
 }
->>>>>>> 60ce877b08c3d652a4261d145ed63de5fa25e0c3
