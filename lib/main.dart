@@ -4,14 +4,6 @@ import 'package:flutter/material.dart';
 import './pages/profil.dart';
 
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
-  Firebase.initializeApp();
-  runApp(test());
-}
-
-
 class test extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -45,5 +37,4 @@ class test extends StatelessWidget {
           )
         )
     );
-  }
 }
