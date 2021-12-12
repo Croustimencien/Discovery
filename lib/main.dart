@@ -21,7 +21,7 @@ class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-        navigateAfterSeconds: Authen(),
+        navigateAfterSeconds: map(),
         seconds: 5,
         title: const Text(
           'Discovery',

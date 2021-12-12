@@ -107,6 +107,7 @@ class InscriMail extends StatelessWidget{
                           borderRadius: BorderRadius.circular(10.0),
                         )
                     ),
+                    obscureText: true,
                     validator: (value){
                       if (value!.isEmpty){
                         return "Veuillez entrer un mot de passe";
