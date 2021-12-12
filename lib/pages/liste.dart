@@ -20,147 +20,121 @@ class liste extends StatelessWidget {
         home: Builder(
           builder: (context) => Scaffold(
             appBar: AppBar(
-              title: Text('Discovery'),
+              backgroundColor: Colors.orange,
+              title: const Text('Lieux proches de vous'),
             ),
             body:  SingleChildScrollView(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Container(
-
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('Port de Brest'),
-                        new Image.asset(
-                          'assets/PortBrest.png',
-                          width: 200.0,
-                          height: 100.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ],
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Text('Port de Brest'),
+                      Image.asset(
+                        'assets/PortBrest.png',
+                        width: 200.0,
+                        height: 100.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ],
                   ),
-                  Spacer(),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('Oceanopolis'),
-                        new Image.asset(
-                          'assets/oceanopolis.png',
-                          width: 200.0,
-                          height: 100.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ],
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Text('Oceanopolis'),
+                      Image.asset(
+                        'assets/oceanopolis.png',
+                        width: 200.0,
+                        height: 100.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ],
                   ),
-                  Spacer(),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('Musée de la Marine'),
-                        new Image.asset(
-                          'assets/museeMarine.png',
-                          width: 200.0,
-                          height: 100.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ],
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Text('Musée de la Marine'),
+                      Image.asset(
+                        'assets/museeMarine.png',
+                        width: 200.0,
+                        height: 100.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ],
                   ),
-                  Spacer(),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('Les Capucins'),
-                        new Image.asset(
-                          'assets/capucins.png',
-                          width: 200.0,
-                          height: 100.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ],
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Text('Les Capucins'),
+                      Image.asset(
+                        'assets/capucins.png',
+                        width: 200.0,
+                        height: 100.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ],
                   ),
-                  Spacer(),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('La Tour Tanguy'),
-                        new Image.asset(
-                          'assets/tourTangy.png',
-                          width: 200.0,
-                          height: 100.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ],
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Text('La Tour Tanguy'),
+                      Image.asset(
+                        'assets/tourTangy.png',
+                        width: 200.0,
+                        height: 100.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ],
                   ),
-                  Spacer(),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('le telepherique'),
-                        new Image.asset(
-                          'assets/telepherique.png',
-                          width: 200.0,
-                          height: 100.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ],
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Text('le telepherique'),
+                      Image.asset(
+                        'assets/telepherique.png',
+                        width: 200.0,
+                        height: 100.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ],
                   ),
-                  Spacer(),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('Le pont de Recouvrance'),
-                        new Image.asset(
-                          'assets/recouvrance.png',
-                          width: 200.0,
-                          height: 100.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ],
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Text('Le pont de Recouvrance'),
+                      Image.asset(
+                        'assets/recouvrance.png',
+                        width: 200.0,
+                        height: 100.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ],
                   ),
-                  Spacer(),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('Le Master'),
-                        new Image.asset(
-                          'assets/bowling.png',
-                          width: 200.0,
-                          height: 100.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ],
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Text('Le Master'),
+                      Image.asset(
+                        'assets/bowling.png',
+                        width: 200.0,
+                        height: 100.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ],
                   ),
-                  Spacer(),
-                  Container(
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [
-                        Text('Le jardin botanique'),
-                        new Image.asset(
-                          'assets/jardinBotanique.png',
-                          width: 200.0,
-                          height: 100.0,
-                          fit: BoxFit.cover,
-                        ),
-                      ],
-                    ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      const Text('Le jardin botanique'),
+                      Image.asset(
+                        'assets/jardinBotanique.png',
+                        width: 200.0,
+                        height: 100.0,
+                        fit: BoxFit.cover,
+                      ),
+                    ],
                   ),
                 ],
               ),
