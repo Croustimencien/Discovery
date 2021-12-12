@@ -1,4 +1,3 @@
-import 'package:appflutter/pages/InscriptionMail.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import './authen.dart';
@@ -23,7 +22,7 @@ class Home extends StatelessWidget {
                   FirebaseAuth auth = FirebaseAuth.instance;
                   auth.signOut().then((res){
                     Navigator.pushAndRemoveUntil(context,
-                        MaterialPageRoute(builder: (context) => InscriMail()),
+                        MaterialPageRoute(builder: (context) => Authen()),
                         (Route<dynamic> route) => false);
                   });
                 },
