@@ -13,7 +13,7 @@ void main() async {
   Firebase.initializeApp();
 
   runApp(MaterialApp(
-      home:IntroScreen()));
+      home:MyMap()));
 
 }
 
@@ -45,7 +45,7 @@ class test extends StatelessWidget {
           builder: (context) => Scaffold(
             floatingActionButton: FloatingActionButton(onPressed: (){
               Navigator.push(context, new MaterialPageRoute(
-                  builder: (context) => map()));
+                  builder: (context) => MyMap()));
             },),
             appBar: AppBar(
               title: Text('test'),
