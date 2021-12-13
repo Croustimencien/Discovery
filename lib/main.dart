@@ -38,5 +38,4 @@ class IntroScreen extends StatelessWidget {
         photoSize: 100.0,
         loaderColor: Colors.orange);
   }
-}
-
+  }
