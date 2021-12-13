@@ -207,6 +207,7 @@ class description extends StatelessWidget {
                     )
                 ),
             bottomNavigationBar: BottomAppBar(
+
                 child: ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color(0xff00c2cb))),
                     onPressed: (){
                   Navigator.push(context, MaterialPageRoute(

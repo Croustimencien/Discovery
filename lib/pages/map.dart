@@ -13,7 +13,7 @@ class MyMap extends StatefulWidget {
 class _map extends State<MyMap> {
   //GoogleMapController myMapController;
   final Set<Marker> _markers = new Set();
-  static const LatLng firstLocation = const LatLng(37.77483, -122.41942);
+  static const LatLng firstLocation = const LatLng(	48.390394, -4.486076);
   @override
   Widget build(BuildContext context) {
     return  Builder(
