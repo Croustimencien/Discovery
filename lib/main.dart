@@ -1,6 +1,7 @@
 // @dart=2.9
 import 'package:appflutter/pages/authen.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:splashscreen/splashscreen.dart';
 import 'package:appflutter/pages/map.dart';
@@ -28,6 +29,7 @@ class IntroScreen extends StatelessWidget {
         seconds: 5,
         title: const Text(
           "Discovery, l'appli qui te fais découvrir les alentours !",
+          textAlign: TextAlign.center,
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
         ),
         image: Image.asset('./assets/LogoDiscovery.png', fit: BoxFit.scaleDown),
