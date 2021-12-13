@@ -15,7 +15,7 @@ void main() async {
   Firebase.initializeApp();
 
   runApp(MaterialApp(
-      home:Home()));
+      home:IntroScreen()));
 
 }
 

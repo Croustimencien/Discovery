@@ -31,35 +31,12 @@ class _map extends State<MyMap> {
                               target: firstLocation,
                               zoom: 12
                           ),
-                          markers: this.myMarker(),
-                          mapType: MapType.normal,
-                          onMapCreated: (controller) {
-                            setState(() {
-                              //myMapController = controller;
-                            });
-                            },
                         ),
                       )
                     ]
                 )
             )
     );
-  }
-  Set<Marker> myMarker() {
-    setState(() {
-      _markers.add(Marker(
-        // This marker id can be anything that uniquely identifies each marker.
-        markerId: MarkerId(firstLocation.toString()),
-        position: firstLocation,
-        infoWindow: InfoWindow(
-          title: 'Historical City',
-          snippet: '5 Star Rating',
-        ),
-        icon: BitmapDescriptor.defaultMarker,
-      ));
-    });
-
-    return _markers;
   }
 }
 
