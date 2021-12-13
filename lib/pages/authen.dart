@@ -174,6 +174,10 @@ class InscriMail extends StatelessWidget{
         child: Scaffold(
           body: SingleChildScrollView(
             child: Column(
+              children: [
+                const SizedBox(
+                  height: 70,
+                ),
                 Padding(
                   padding: const EdgeInsets.all(20.00),
                   child:
