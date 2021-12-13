@@ -1,18 +1,11 @@
 import 'package:flutter/material.dart';
+import 'description.dart';
 
 
-var Port = 1;
-var Oceanopolis = 2;
-var Musee = 3;
-var Capucins = 4;
-var Tour = 5;
-var telepherique = 6;
-var recouvrance = 5;
-var master = 7;
-var jardinBotanique = 8;
 
 
 class liste extends StatelessWidget {
+  var value = 0;
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,116 +18,249 @@ class liste extends StatelessWidget {
             ),
             body:  SingleChildScrollView(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      const Text('Port de Brest'),
-                      Image.asset(
-                        'assets/PortBrest.png',
-                        width: 200.0,
-                        height: 100.0,
-                        fit: BoxFit.cover,
-                      ),
-                    ],
+
+                  const SizedBox(
+                    height: 50,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      const Text('Oceanopolis'),
-                      Image.asset(
-                        'assets/oceanopolis.png',
-                        width: 200.0,
-                        height: 100.0,
-                        fit: BoxFit.cover,
+
+                  Container(
+                    height: 90,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage('assets/PortBrest.png'), fit: BoxFit.cover),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child :Center(
+                      child: ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color(0xff00c2cb))),
+                          onPressed: (){
+                        Navigator.push(context, MaterialPageRoute(
+                            builder: (context) => description(value = 1)));
+                        },
+                          child: const Text("Port de Brest",
+                            style: TextStyle(
+                              fontSize: 25.00,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          )
                       ),
-                    ],
+                    ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      const Text('Musée de la Marine'),
-                      Image.asset(
-                        'assets/museeMarine.png',
-                        width: 200.0,
-                        height: 100.0,
-                        fit: BoxFit.cover,
-                      ),
-                    ],
+
+                  const SizedBox(
+                    height: 50,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      const Text('Les Capucins'),
-                      Image.asset(
-                        'assets/capucins.png',
-                        width: 200.0,
-                        height: 100.0,
-                        fit: BoxFit.cover,
+
+                  Container(
+                    height: 90,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage('assets/oceanopolis.png'), fit: BoxFit.cover),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child :Center(
+                      child: ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color(0xff00c2cb))),
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => description(value= 2)));
+                          },
+                          child: const Text("Océanopolis",
+                            style: TextStyle(
+                              fontSize: 25.00,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          )
                       ),
-                    ],
+                    ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      const Text('La Tour Tanguy'),
-                      Image.asset(
-                        'assets/tourTangy.png',
-                        width: 200.0,
-                        height: 100.0,
-                        fit: BoxFit.cover,
-                      ),
-                    ],
+
+                  const SizedBox(
+                    height: 50,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      const Text('le telepherique'),
-                      Image.asset(
-                        'assets/telepherique.png',
-                        width: 200.0,
-                        height: 100.0,
-                        fit: BoxFit.cover,
+
+                  Container(
+                    height: 90,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage('assets/museeMarine.png'), fit: BoxFit.cover),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child :Center(
+                      child: ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color(0xff00c2cb))),
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => description(value= 3)));
+                          },
+                          child: const Text('Musée de la Marine',
+                            style: TextStyle(
+                              fontSize: 25.00,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          )
                       ),
-                    ],
+                    ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      const Text('Le pont de Recouvrance'),
-                      Image.asset(
-                        'assets/recouvrance.png',
-                        width: 200.0,
-                        height: 100.0,
-                        fit: BoxFit.cover,
-                      ),
-                    ],
+
+                  const SizedBox(
+                    height: 50,
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      const Text('Le Master'),
-                      Image.asset(
-                        'assets/bowling.png',
-                        width: 200.0,
-                        height: 100.0,
-                        fit: BoxFit.cover,
+
+                  Container(
+                    height: 90,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage('assets/capucins.png'), fit: BoxFit.cover),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child :Center(
+                      child: ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color(0xff00c2cb))),
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => description(value=4)));
+                          },
+                          child: const Text('Les Capucins',
+                            style: TextStyle(
+                              fontSize: 25.00,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          )
                       ),
-                    ],
+                    ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      const Text('Le jardin botanique'),
-                      Image.asset(
-                        'assets/jardinBotanique.png',
-                        width: 200.0,
-                        height: 100.0,
-                        fit: BoxFit.cover,
+
+                  const SizedBox(
+                    height: 50,
+                  ),
+
+                  Container(
+                    height: 90,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage('assets/tourTangy.png'), fit: BoxFit.cover),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child :Center(
+                      child: ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color(0xff00c2cb))),
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => description(value=5)));
+                          },
+                          child: const Text('La tour Tanguy',
+                            style: TextStyle(
+                              fontSize: 25.00,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          )
                       ),
-                    ],
+                    ),
+                  ),
+
+                  const SizedBox(
+                    height: 50,
+                  ),
+
+                  Container(
+                    height: 90,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage('assets/telepherique.png'), fit: BoxFit.cover),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child :Center(
+                      child: ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color(0xff00c2cb))),
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => description(value= 6)));
+                          },
+                          child: const Text('Le téléphérique',
+                            style: TextStyle(
+                              fontSize: 25.00,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          )
+                      ),
+                    ),
+                  ),
+
+                  const SizedBox(
+                    height: 50,
+                  ),
+
+                  Container(
+                    height: 90,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage('assets/recouvrance.png'), fit: BoxFit.cover),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child :Center(
+                      child: ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color(0xff00c2cb))),
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => description(value= 7)));
+                          },
+                          child: const Text('Le pont de Recouvrance',
+                            style: TextStyle(
+                              fontSize: 25.00,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          )
+                      ),
+                    ),
+                  ),
+
+                  const SizedBox(
+                    height: 50,
+                  ),
+
+                  Container(
+                    height: 90,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage('assets/bowling.png'), fit: BoxFit.cover),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child :Center(
+                      child: ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color(0xff00c2cb))),
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => description(value= 8)));
+                          },
+                          child: const Text('Le Master',
+                            style: TextStyle(
+                              fontSize: 25.00,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          )
+                      ),
+                    ),
+                  ),
+
+                  const SizedBox(
+                    height: 50,
+                  ),
+
+                  Container(
+                    height: 90,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(image: AssetImage('assets/jardinBotanique.png'), fit: BoxFit.cover),
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child :Center(
+                      child: ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color(0xff00c2cb))),
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(
+                                builder: (context) => description(value= 9)));
+                          },
+                          child: const Text('Le Jardin Botanique',
+                            style: TextStyle(
+                              fontSize: 25.00,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white,
+                            ),
+                          )
+                      ),
+                    ),
                   ),
                 ],
               ),
