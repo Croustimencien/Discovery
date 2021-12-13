@@ -8,13 +8,14 @@ import './pages/profil.dart';
 import './pages/home.dart';
 import './pages/liste.dart';
 
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   Firebase.initializeApp();
 
   runApp(MaterialApp(
-      home:MyMap()));
+      home:Home()));
 
 }
 
@@ -23,7 +24,7 @@ class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SplashScreen(
-        navigateAfterSeconds: liste(),
+        navigateAfterSeconds: Home(),
         seconds: 5,
         title: const Text(
           "Discovery, l'appli qui te fais découvrir les alentours !",
@@ -46,7 +47,7 @@ class test extends StatelessWidget {
           builder: (context) => Scaffold(
             floatingActionButton: FloatingActionButton(onPressed: (){
               Navigator.push(context, new MaterialPageRoute(
-                  builder: (context) => MyMap()));
+                  builder: (context) => Home()));
             },),
             appBar: AppBar(
               title: Text('test'),

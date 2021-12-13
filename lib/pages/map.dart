@@ -11,7 +11,7 @@ class MyMap extends StatefulWidget {
 }
 
 class _map extends State<MyMap> {
-  GoogleMapController myMapController;
+  //GoogleMapController myMapController;
   final Set<Marker> _markers = new Set();
   static const LatLng firstLocation = const LatLng(37.77483, -122.41942);
   @override
@@ -35,7 +35,7 @@ class _map extends State<MyMap> {
                           mapType: MapType.normal,
                           onMapCreated: (controller) {
                             setState(() {
-                              myMapController = controller;
+                              //myMapController = controller;
                             });
                             },
                         ),

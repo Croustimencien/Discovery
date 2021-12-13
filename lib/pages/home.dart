@@ -92,7 +92,7 @@ class Home extends StatelessWidget {
                     child: ElevatedButton(style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Color(0xff00c2cb))),
                         onPressed: (){
                               Navigator.push(context, MaterialPageRoute(
-                                builder: (context) => map()));
+                                builder: (context) => MyMap()));
                               },
                       child: const Text("C'est la Carte",
                       style: TextStyle(
