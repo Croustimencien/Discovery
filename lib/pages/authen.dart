@@ -131,8 +131,6 @@ class InscriMail extends StatelessWidget{
     passwordController.dispose();
   }
 
-
-
   @override
 
   Widget build(BuildContext context) {
