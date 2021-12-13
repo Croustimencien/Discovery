@@ -4,7 +4,8 @@ class Profil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Votre profil',
+        debugShowCheckedModeBanner: false,
+        title: 'Discovery',
         home: Builder(
           builder: (context) => Scaffold(
               appBar: AppBar(
