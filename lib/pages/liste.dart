@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'description.dart';
 
-
-
-
 class liste extends StatelessWidget {
   var value = 0;
   @override

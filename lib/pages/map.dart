@@ -21,6 +21,7 @@ class _map extends State<MyMap> {
             Scaffold(
                 appBar: AppBar(
                   title: Text('Map'),
+                  backgroundColor: Colors.orange,
                 ),
                 body: Column(
                     mainAxisAlignment: MainAxisAlignment.center,

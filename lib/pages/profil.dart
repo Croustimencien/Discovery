@@ -9,6 +9,7 @@ class Profil extends StatelessWidget {
           builder: (context) => Scaffold(
               appBar: AppBar(
                 title: Text('Discovery'),
+                backgroundColor: Colors.orange,
               ),
               body: SingleChildScrollView(
                   child: Column(
