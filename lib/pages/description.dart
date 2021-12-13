@@ -10,7 +10,7 @@ class description extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Discovery',
+        debugShowCheckedModeBanner: false,
         home: Builder(
           builder: (context) => Scaffold(
             appBar: AppBar(

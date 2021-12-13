@@ -37,38 +37,3 @@ class IntroScreen extends StatelessWidget {
         loaderColor: Colors.orange);
   }
   }
-
-class test extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Discovery',
-        home: Builder(
-          builder: (context) => Scaffold(
-            floatingActionButton: FloatingActionButton(onPressed: (){
-              Navigator.push(context, new MaterialPageRoute(
-                  builder: (context) => Home()));
-            },),
-            appBar: AppBar(
-              title: Text('test'),
-            ),
-              body:  SingleChildScrollView(
-                  child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      children: [
-                        Container(
-                            child: Row(
-                              children: [
-
-
-                              ]
-                            )
-                        )
-                      ]
-                  )
-              )
-          )
-        )
-    );
-}}
