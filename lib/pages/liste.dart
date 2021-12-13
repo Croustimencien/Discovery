@@ -6,6 +6,7 @@ class liste extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
       title: 'Discovery',
         home: Builder(
           builder: (context) => Scaffold(

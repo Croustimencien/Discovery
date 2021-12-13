@@ -238,6 +238,8 @@ class InscriMail extends StatelessWidget{
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
                       registerToFb();
+                      Navigator.push(context, MaterialPageRoute(
+                          builder: (context) => Home()));
                     }
                   },
                   child: Text('Se connecter'),
