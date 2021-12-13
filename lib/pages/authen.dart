@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import './home.dart';
 
@@ -85,7 +86,11 @@ class formLogin extends StatelessWidget{
       child: Scaffold(
         body: SingleChildScrollView(
           child: Column(
-            children: [TextFormField(
+            children: [
+              const SizedBox(
+                height: 70,
+              ),
+              TextFormField(
               decoration: const InputDecoration(
                 hintText: "Email",
                 labelText: "Email",
@@ -169,10 +174,10 @@ class InscriMail extends StatelessWidget{
         child: Scaffold(
           body: SingleChildScrollView(
             child: Column(
-              children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.all(20.00),
-                  child: TextFormField(
+                  child:
+                  TextFormField(
                     controller: nameController,
                     decoration: InputDecoration(
                         labelText: "Entrez votre nom d'utilisateur",
