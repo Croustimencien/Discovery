@@ -107,6 +107,3 @@ class Home extends StatelessWidget {
     );
   }
 }
-
-//bleu 0xff00c2cb
-//orange 0xffff914d
